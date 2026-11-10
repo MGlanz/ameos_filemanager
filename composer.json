@@ -33,5 +33,8 @@
             "extension-key": "ameos_filemanager"
         }
     },
-    "version": "2.0.4"
+    "version": "2.0.5",
+    "scripts": {
+        "test:security": "php Tests/Security/SearchInputTest.php"
+    }
 }

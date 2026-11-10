@@ -299,7 +299,7 @@ class FileRepository extends \TYPO3\CMS\Extbase\Persistence\Repository
         return $query->execute()->getFirst();
     }
 
-    protected function buildQueryWithSorting($queryBuilder)
+    protected function buildQueryWithSorting($queryBuilder, $pluginNamespace = 'tx_ameosfilemanager_fe_filemanager')
     {
         $get = GeneralUtility::_GET($pluginNamespace);
         $availableSorting = [
